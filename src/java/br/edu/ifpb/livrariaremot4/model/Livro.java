@@ -6,12 +6,17 @@
 package br.edu.ifpb.livrariaremot4.model;
 
 import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 /**
  *
  * @author joaopaulo
  */
+
+@Entity
 public class Livro implements Serializable{
+    @Id
     private Long codigo;
     private String titulo;
     private String editora;

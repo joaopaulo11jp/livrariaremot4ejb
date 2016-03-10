@@ -15,8 +15,8 @@ import javax.ejb.Remote;
 
 @Remote
 public interface LivroManagerBeanRemote {
-    Livro cadastrar();
-    Livro alterarLivro();
+    Livro cadastrar(String nome, String titulo, String editora, String isbn, String edicao, String autor);
+    Livro alterarLivro(Livro livro);
     Livro consultarPorAutor(String autor);
     Livro consultarPorISBN(String isbn);
     Livro consultarPorTitulo(String titulo);

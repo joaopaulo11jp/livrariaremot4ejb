@@ -16,15 +16,6 @@ import javax.ejb.Stateless;
 @Stateless
 public class LivroManagerBean implements LivroManagerBeanRemote{
 
-    @Override
-    public Livro cadastrar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public Livro alterarLivro() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 
     @Override
     public Livro consultarPorAutor(String autor) {
@@ -48,6 +39,16 @@ public class LivroManagerBean implements LivroManagerBeanRemote{
 
     @Override
     public Integer numeroBuscas() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Livro cadastrar(String nome, String titulo, String editora, String isbn, String edicao, String autor) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Livro alterarLivro(Livro livro) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
