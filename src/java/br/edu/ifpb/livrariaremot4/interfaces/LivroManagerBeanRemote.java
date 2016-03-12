@@ -19,9 +19,9 @@ public interface LivroManagerBeanRemote {
     Livro cadastrar(String titulo, String editora, String isbn, String edicao, String autor);
     Livro alterarLivro(Livro livro);
     List<Livro> getTodosOsLivros();
-    Livro consultarPorAutor(String autor);
-    Livro consultarPorISBN(String isbn);
-    Livro consultarPorTitulo(String titulo);
+    List<Livro> consultarPorAutor(String autor);
+    List<Livro> consultarPorISBN(String isbn);
+    List<Livro> consultarPorTitulo(String titulo);
     Livro remover(Long id);
     Integer numeroBuscas();
     String teste();
