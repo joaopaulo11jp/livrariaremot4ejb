@@ -10,6 +10,8 @@ import br.edu.ifpb.livrariaremot4.model.Livro;
 import java.util.ArrayList;
 import java.util.List;
 import javax.ejb.Stateless;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 
 /**
  *
@@ -17,7 +19,6 @@ import javax.ejb.Stateless;
  */
 @Stateless(mappedName = "LivroManager")
 public class LivroManagerBean implements LivroManagerBeanRemote{
-
 
     @Override
     public List<Livro> consultarPorAutor(String autor) {
