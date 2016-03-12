@@ -7,6 +7,7 @@ package br.edu.ifpb.livrariaremot4.bean;
 
 import br.edu.ifpb.livrariaremot4.interfaces.LivroManagerBeanRemote;
 import br.edu.ifpb.livrariaremot4.model.Livro;
+import br.edu.ifpb.livrariaremot4.model.dao.DAOLivro;
 import java.util.ArrayList;
 import java.util.List;
 import javax.ejb.Stateless;
@@ -20,6 +21,14 @@ import javax.persistence.PersistenceContext;
 @Stateless(mappedName = "LivroManager")
 public class LivroManagerBean implements LivroManagerBeanRemote{
 
+    @PersistenceContext
+    private EntityManager em;
+    private DAOLivro daolivro;
+    
+    private void postConstruct(){
+        this.daolivro = new DAOLivro(em);
+    }    
+    
     @Override
     public List<Livro> consultarPorAutor(String autor) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
