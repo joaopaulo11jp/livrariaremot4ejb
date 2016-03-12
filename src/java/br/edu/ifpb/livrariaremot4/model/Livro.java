@@ -30,6 +30,7 @@ public class Livro implements Serializable{
         public Livro(Long codigo, String titulo, String editora, String isbn, 
                 String edicao, String autor){
             this.codigo = codigo;
+            this.titulo = titulo;
             this.editora = editora;
             this.isbn = isbn;
             this.edicao = edicao;
