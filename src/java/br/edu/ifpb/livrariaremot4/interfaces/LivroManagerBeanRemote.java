@@ -6,6 +6,7 @@
 package br.edu.ifpb.livrariaremot4.interfaces;
 
 import br.edu.ifpb.livrariaremot4.model.Livro;
+import br.edu.ifpb.livrariaremot4.model.LivroLog;
 import java.util.List;
 import javax.ejb.Remote;
 
@@ -22,7 +23,7 @@ public interface LivroManagerBeanRemote {
     List<Livro> consultarPorAutor(String autor);
     List<Livro> consultarPorISBN(String isbn);
     List<Livro> consultarPorTitulo(String titulo);
+    List<LivroLog> getLogs();
     Livro remover(Long id);
     Integer numeroBuscas();
-    String teste();
 }

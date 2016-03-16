@@ -5,7 +5,9 @@
         <group>
             <file>file:/home/joaopaulo/NetBeansProjects/LivrariaRemot4EJB/src/java/br/edu/ifpb/livrariaremot4/model/Livro.java</file>
             <file>file:/home/joaopaulo/NetBeansProjects/LivrariaRemot4EJB/src/java/br/edu/ifpb/livrariaremot4/model/dao/DAOLivro.java</file>
+            <file>file:/home/joaopaulo/NetBeansProjects/LivrariaRemot4EJB/src/java/br/edu/ifpb/livrariaremot4/model/LivroLog.java</file>
             <file>file:/home/joaopaulo/NetBeansProjects/LivrariaRemot4EJB/src/java/br/edu/ifpb/livrariaremot4/bean/LivroManagerBean.java</file>
+            <file>file:/home/joaopaulo/NetBeansProjects/LivrariaRemot4EJB/src/java/br/edu/ifpb/livrariaremot4/bean/log/LivroManagerLogBean.java</file>
             <file>file:/home/joaopaulo/NetBeansProjects/LivrariaRemot4EJB/src/java/br/edu/ifpb/livrariaremot4/interfaces/LivroManagerBeanRemote.java</file>
             <file>file:/home/joaopaulo/NetBeansProjects/LivrariaRemot4EJB/src/java/br/edu/ifpb/livrariaremot4/bean/LivrariaStatsBean.java</file>
         </group>

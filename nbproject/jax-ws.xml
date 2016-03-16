@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="LivroManagerBean">
+      <implementation-class>br.edu.ifpb.livrariaremot4.bean.LivroManagerBean</implementation-class>
+    </service>
+  </services>
+  <clients/>
+</jax-ws>

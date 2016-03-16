@@ -17,27 +17,29 @@ import javax.persistence.Id;
  */
 
 @Entity
-public class Livro implements Serializable{
+public class LivroLog implements Serializable{
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
+    private Long id;
     private Long codigo;
     private String titulo;
     private String editora;
     private String isbn;
     private String edicao;
     private String autor;
+    private String operacao;
     
-        public Livro(Long codigo,String titulo, String editora, String isbn, 
-                String edicao, String autor){
-            this.codigo = codigo;
-            this.titulo = titulo;
-            this.editora = editora;
-            this.isbn = isbn;
-            this.edicao = edicao;
-            this.autor = autor;
+        public LivroLog(Livro livro,String operacao){
+            this.codigo = livro.getCodigo();
+            this.titulo = livro.getTitulo();
+            this.editora = livro.getEditora();
+            this.isbn = livro.getIsbn();
+            this.edicao = livro.getEdicao();
+            this.autor = livro.getAutor();
+            this.operacao = operacao;
         }    
     
-        public Livro(String titulo, String editora, String isbn, 
+        public LivroLog(String titulo, String editora, String isbn, 
                 String edicao, String autor){
             this.titulo = titulo;
             this.editora = editora;
@@ -46,8 +48,16 @@ public class Livro implements Serializable{
             this.autor = autor;
         }
         
-        public Livro(){}
+        public LivroLog(){}
 
+    public Long getId(){
+        return id;
+    }
+
+    public void setId(Long id){
+        this.id = id;
+    }
+        
     public Long getCodigo() {
         return codigo;
     }
@@ -94,6 +104,14 @@ public class Livro implements Serializable{
 
     public void setAutor(String autor) {
         this.autor = autor;
+    }
+    
+    public String getOperacao() {
+        return operacao;
+    }
+
+    public void setOperacao(String operacao) {
+        this.operacao = operacao;
     }
 
 }
